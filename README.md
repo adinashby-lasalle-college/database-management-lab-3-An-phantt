@@ -60,9 +60,11 @@ For this lab, we will focus on a **One-to-Many** relationship between two tables
 3. Click **Create** to establish the relationship. You will see a line representing the **One-to-Many** relationship between **Courses** and **Students**.
 
 #### Questions:
-1. What is the purpose of enforcing referential integrity in a relationship?
-2. What does a **One-to-Many** relationship mean in this context?
+1. What is the purpose of enforcing referential integrity in a relationship? "The purpose of referential integrity is to prevent orphan records – records that reference other records that no longer exist. "
 
+2. What does a **One-to-Many** relationship mean in this context?
+"
+One-to-many relationships are used when a single entity is associated with any number of other entities. For example, a Blog can have many associated Posts , but each Post is associated with only one Blog 
 ---
 
 ### Part 4: Testing the Relationship
@@ -84,9 +86,15 @@ For this lab, we will focus on a **One-to-Many** relationship between two tables
 
 #### Questions:
 1. What happens if you try to enter a **CourseID** in the **Students** table that doesn't exist in the **Courses** table?
+It shows errors
 2. How does the query show the relationship between the two tables?
+They combine the data in the two table using course ID as the link 
 
 ---
 
 ### Part 5: Conclusion
 - **Discussion**: Summarize how relationships between tables help reduce redundancy and maintain data integrity. Discuss the role of referential integrity and its importance in preventing orphan records and ensuring data consistency across related tables.
+-reducing redundancy 
+- maintaining data intergrity 
+- prevent orphan records
+- Data consistency
